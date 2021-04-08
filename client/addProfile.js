@@ -7,7 +7,7 @@ Template.addProfile.events({
         let profAge = $('#age').val();
         let profGen = $('input[name="genderRadio"]:checked').val();
         if (isAddFormValid(profPic, profFirst, profLast, profAge)){
-            // Save data into collection
+            // Save data(document) into collection
             profilesdb.insert({
                 "pPic":profPic,
                 "pFirst":profFirst,
