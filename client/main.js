@@ -12,7 +12,13 @@ import './editProfile.html';
 import './filter.html';
 
 import '../lib/collection.js';
+import '../lib/userAcct.js';
 import './myAccounts.js';
 import './addProfile.js';
 import './infiniteScroll.js';
 import './filter.js';
+
+if(Meteor.userId())
+    Meteor.subscribe("profData");
+else
+    Meteor.subscribe("noUser");
