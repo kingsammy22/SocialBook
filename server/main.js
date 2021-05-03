@@ -8,12 +8,12 @@ Meteor.startup(() => {
 
 Meteor.publish('profData', function(){
   return profilesdb.find({}, {
-    // fields: {pOwn: 1} // 0 hides the field and 1 shows the field
+    // fields: {pOwn: 1} // 0 hides the key and 1 shows the key
   });
 });
 
 Meteor.publish('noUser', function(){
   return profilesdb.find({}, {
-    fields: {pPic:1, pFisrt:1, pLast:1, pAge:1} // 0 hides the field and 1 shows the field
+    fields: {pPic:1, pFisrt:1, pLast:1, pAge:1} // 0 hides the key and 1 shows the key
   });
 });
