@@ -4,21 +4,28 @@ import { Session } from 'meteor/session';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './main.html';
-import './myAccounts.html';
-import './addProfile.html';
-import './confirmDel.html';
-import './editProfile.html';
-import './filter.html';
-
 import '../lib/collection.js';
 import '../lib/userAcct.js';
-import './myAccounts.js';
-import './addProfile.js';
 import './infiniteScroll.js';
+
+import './main.html';
+
+import './myAccounts.html';
+import './myAccounts.js';
+
+import './addProfile.html';
+import './addProfile.js';
+
+import './confirmDel.html';
+import './editProfile.html';
+
+import './filter.html';
 import './filter.js';
 
-if(Meteor.userId())
+import './signIn.html';
+import './signIn.js';
+
+// if(Meteor.userId())
     Meteor.subscribe("profData");
-else
-    Meteor.subscribe("noUser");
+// else
+    // Meteor.subscribe("noUser");
