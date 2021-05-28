@@ -4,11 +4,17 @@
 
 <body>
   <div class="container">
-    {{> signInForm}}
+    <!-- {{> signInForm}}
     {{#if currentUser}}
       {{> addProfile}}
     {{/if}}
     {{> profFilter}}
-    {{> myAccounts}}
+    {{> myAccounts}} -->
   </div>
 </body>
+
+<template name="app_layout">
+  {{> Template.dynamic template=nav}}
+  {{> Template.dynamic template=header}}
+  {{> Template.dynamic template=mainBody}}
+</template>

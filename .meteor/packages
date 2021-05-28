@@ -23,3 +23,5 @@ fortawesome:fontawesome
 session@1.2.0
 accounts-password
 useraccounts:bootstrap
+ostrio:flow-router-extra
+kadira:blaze-layout

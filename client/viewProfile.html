@@ -1,0 +1,26 @@
+<template name="viewProfile">
+    <div class="row">
+        {{#with theProfiles}}
+        <div class="col-md-3">
+            <img class="w-100" src="blank-profile_640.png" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md 4">{{fname}}</div>
+                <div class="col-md 4">Age</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    Sex
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    created by owner
+                </div>
+            </div>
+        </div>
+        {{/with}}
+    </div>
+   
+</template>
