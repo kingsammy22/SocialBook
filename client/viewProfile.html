@@ -1,26 +1,26 @@
 <template name="viewProfile">
-    <div class="row">
-        {{#with theProfiles}}
-        <div class="col-md-3">
-            <img class="w-100" src="blank-profile_640.png" alt="">
+    <div class="row mt-5">
+        {{#each theProfile}}
+        <div class="col-md-5 maxH">
+            <img class="w-100" src={{pPic}} alt="">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-7">
             <div class="row">
-                <div class="col-md 4">{{fname}}</div>
-                <div class="col-md 4">Age</div>
+                <div class="col-md 4">Name:&nbsp;{{pFirst}}&nbsp;{{pLast}}</div>
+                <div class="col-md 4">Age:&nbsp;{{pAge}}</div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    Sex
+                    Sex:&nbsp;{{pGen}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    created by owner
+                    created by&nbsp;{{pName}}
                 </div>
             </div>
         </div>
-        {{/with}}
+        {{/each}}
     </div>
    
 </template>

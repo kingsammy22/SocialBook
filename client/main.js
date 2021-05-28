@@ -30,8 +30,4 @@ import './error404.html';
 import './navBar.html';
 
 import './viewProfile.html';
-
-// if(Meteor.userId())
-    Meteor.subscribe("profData");
-// else
-    // Meteor.subscribe("noUser");
+import './viewProfile.js';
