@@ -25,6 +25,17 @@ body {
 .js-view{
   color: #297fb8;
 }
+.js-view:hover{
+  animation: aniro 4s linear infinite;
+}
+@keyframes aniro {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }  
+}
 .btn-default{
   border: 4px solid rgb(61, 129, 238) !important;
 }
