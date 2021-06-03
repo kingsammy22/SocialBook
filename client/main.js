@@ -27,7 +27,9 @@ import './signIn.html';
 import './signIn.js';
 
 import './error404.html';
+
 import './navBar.html';
+import './navBar.js';
 
 import './viewProfile.html';
 import './viewProfile.js';
